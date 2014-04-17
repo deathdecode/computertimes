@@ -109,9 +109,9 @@
                                 <a href="https://www.pinterest.com/computertimesltd/"><i class="fa fa-pinterest"></i></a>
                             </li>
                             <!-- customer -->
-                            <li class="tile tile_customer trs_scale">
+<!--                            <li class="tile tile_customer trs_scale">
                                 <a href="/account/login" id="customer_login_link"><i class='fa fa-user'></i></a>
-                            </li>
+                            </li>-->
                             <!-- currency -->
                         </ul>
                         <!--
@@ -155,28 +155,31 @@
                                 </li>
 
                                 <li class="">
-                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Notebook</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/notebook');?>" title="">Notebook</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php base_url().'getpagecontents/desktop'?>" title="">Desktop</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/laptop');?>" title="">Laptop</a>
+                                </li>
+                                <li class="">
+                                    <a href="<?php print_r(base_url().'getpagecontents/desktop');?>" title="">Desktop</a>
                                 </li>
                                 <li class=" last">
-                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Tablet</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/tablet');?>" title="">Tablet</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Printer</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/printer');?>" title="">Printer</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Software</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/software');?>" title="">Software</a>
                                 </li>
                                 <li class=" last">
-                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Networking</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/networking');?>" title="">Networking</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Printing Accessories</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/printingaccessories');?>" title="">Printing Accessories</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Solution</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/solutions');?>" title="">Solution</a>
                                 </li>
                             </ul>
                             <script>

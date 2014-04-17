@@ -1,28 +1,9 @@
-<!--<html>
-<head>
-	<title>all results</title>
-</head>
-<body>
-
-    
-//<?php
-//    foreach ($alldata_desktop  as $row)
-//    {  
-//        echo '<img src = "'.base_url().'images/'.$row->imagename.'" height="100px" width ="100px"/>';
-//        ?>
-    //<?php
-//    }
-////print_r($alldata_desktop);
-//?>
-
-</body>
-</html>-->
 <!doctype html>
  <html class="no-js"> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Computer Times Ltd</title>
+        <title><?php echo $category; ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
         <script type="text/javascript">
             //<![CDATA[
@@ -51,11 +32,32 @@
         <link href="<?php echo base_url('assets/css/responsive7524.css'); ?>" rel="stylesheet" type="text/css"  media="all"  />
 
         <link href="<?php echo base_url('assets/css/font-awesome.css'); ?>" rel="stylesheet">
-        
+        <!--        <link href="//cdn.shopify.com/s/files/1/0308/1345/t/2/assets/favicon.ico?7524" rel="icon" type="image/x-icon" />-->
+
+
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <link href="//cdn.shopify.com/s/files/1/0308/1345/t/2/assets/ie8.css?7524" rel="stylesheet" type="text/css"  media="all"  />
+        <![endif]-->
+
+        <!--[if gte IE 8]>
+        <style type="text/css">.header_tiles ul.header_tiles-1 li.tile_currency select {padding: 0 0 0 8px !important;}</style>
+        <![endif]-->
+
+        <!--[if gte IE 9]>
+          <style type="text/css">
+            .gradient {
+               filter: none;
+            }
+          </style>
+        <![endif]-->
+
+
+
         <script src="<?php echo base_url('assets/js/option_selection.js'); ?>" type="text/javascript"></script>
         <script src="<?php echo base_url('assets/js/jquery-1.10.2.min.js'); ?>" type="text/javascript"></script>  
 
-        <script src="<?php echo base_url('assets/js/bootstrap7524.css'); ?>" type="text/javascript"></script>
+        <script src="<?php echo base_url('assets/js/bootstrap7524.js'); ?>" type="text/javascript"></script>
         <script src="<?php echo base_url('assets/js/jquery-migrate-1.2.1.min7524.js'); ?>" type="text/javascript"></script>
         <script src="<?php echo base_url('assets/js/shop7524.js'); ?>" type="text/javascript"></script>
         <script src="<?php echo base_url('assets/js/jquery.nivoslider7524.js'); ?>" type="text/javascript"></script>
@@ -107,11 +109,31 @@
                                 <a href="https://www.pinterest.com/computertimesltd/"><i class="fa fa-pinterest"></i></a>
                             </li>
                             <!-- customer -->
-                            <li class="tile tile_customer trs_scale">
+<!--                            <li class="tile tile_customer trs_scale">
                                 <a href="/account/login" id="customer_login_link"><i class='fa fa-user'></i></a>
-                            </li>
+                            </li>-->
                             <!-- currency -->
                         </ul>
+                        <!--
+                                              <ul class="header_tiles-2">
+                                                    <li class="tile_search trs_bg">
+                                                         search form 
+                                                        <form id="search_top" class="search-form" action="/search" method="get" role="search">
+                                                            <input id="search-field" type="text" name="q" placeholder="Search" />
+                                                            <a class="search-submit" href="javascript:document.getElementById('search_top').submit();"><i class="fa fa-arrow-circle-o-right trs_hover"></i></a>
+                                                        </form>
+                                                    </li>
+                                                    <li class="tile_cart trs_bg">
+                                                         shopping cart 
+                                                        <a href="/cart">
+                                                            <i class="fa fa-shopping-cart"></i>
+                                                            <b>Cart:</b>
+                                                            <span class="cart-total-items"><span class="count">0</span> Items</span>
+                                                            <i class="fa fa-arrow-circle-o-right"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                        -->  
                     </div>
                     <!-- Navigation -->
                     <div id="navigation" style="margin-top: 25px;">
@@ -133,28 +155,31 @@
                                 </li>
 
                                 <li class="">
-                                    <a href="/blogs/news" title="">Notebook</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/notebook');?>" title="">Notebook</a>
                                 </li>
                                 <li class="">
-                                    <a href="/pages/documentation" title="">Desktop</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/laptop');?>" title="">Laptop</a>
+                                </li>
+                                <li class="">
+                                    <a href="<?php print_r(base_url().'getpagecontents/desktop');?>" title="">Desktop</a>
                                 </li>
                                 <li class=" last">
-                                    <a href="/pages/contacts" title="">Tablet</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/tablet');?>" title="">Tablet</a>
                                 </li>
                                 <li class="">
-                                    <a href="/blogs/news" title="">Printer</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/printer');?>" title="">Printer</a>
                                 </li>
                                 <li class="">
-                                    <a href="/pages/documentation" title="">Software</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/software');?>" title="">Software</a>
                                 </li>
                                 <li class=" last">
-                                    <a href="/pages/contacts" title="">Networking</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/networking');?>" title="">Networking</a>
                                 </li>
                                 <li class="">
-                                    <a href="/blogs/news" title="">Printing Accessories</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/printingaccessories');?>" title="">Printing Accessories</a>
                                 </li>
                                 <li class="">
-                                    <a href="/pages/documentation" title="">Solution</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/solutions');?>" title="">Solution</a>
                                 </li>
                             </ul>
                             <script>
@@ -174,13 +199,51 @@
                     <!-- center column -->
                     <div id="main_content" class="col-sm-12">
                         <div class="index-scope">
-                            <h3 class="page_title">Desktop Computers</h3>
+                            <h3 class="page_title">
+                            
+                                <?php
+                                $str = strtoupper($category);
+                                echo $str; // Prints MARY HAD A LITTLE LAMB AND SHE LOVED IT SO
+                                ?>
+
+                            </h3>
                             <div class="product-listing product-listing__index">
                                 <div class="row">
-                                    <div class="product product__product-grid-item col-sm-3 item_odd step3-1 step4-1">
+                                    <?php 
+                                    $rowNo = 0;
+                                    foreach ($alldata_desktop as $row){
+                                        if($rowNo%3==0 && $rowNo == 0)
+                                        {
+                                            echo '<div class = "row">';
+                                        }
+                                        else if ($rowNo % 3 == 0) {
+                                            echo '</div><div class = "row">';
+                                        }
+                                        echo '<div class="col-md-4 product product__product-grid-item">
+                                        <div class="">  
+                                            <a href="/products/product01">
+                                                <img src = "'.base_url().'images/'.$row->imagename.'" height="250px" width ="250px"/></a>
+                                        </div>
+                                        <div class="">
+                                            <a href="/products/product01" class="product_title">
+                                                '.$row->pname.'
+                                            </a>
+                                        </div>
+                                        <div class="product_price">
+                                            <span class="money">Price <img src ="'.  base_url().'images/BDT_icon.png'.'" height="23px" width ="20px">'.$row->pprice.'</span>
+                                        </div>
+                                    </div>';
+                                        $rowNo++;
+                                        
+                                    }
+                                    if ($rowNo > 0) {
+                                        echo '</div>';
+                                    }
+                                    ?>
+<!--                                    <div class="product product__product-grid-item col-sm-3 item_odd step3-1 step4-1">
                                         <div class="product_image-wrap">  
                                             <a href="/products/product01">
-                                                <?php echo '<img src = "'.base_url().'images/'.$alldata_desktop[0]->imagename.'" height="100px" width ="100px"/>';?>
+                                                <?php //echo '<img src = "'.base_url().'images/'.$alldata_desktop[0]->imagename.'" height="100px" width ="100px"/>';?>
                                             </a>
                                         </div> .prod-image-wrap 
                                         <div class="product_title-wrap">
@@ -415,7 +478,7 @@
                                             </form>
                                         </div>
 
-                                    </div>		
+                                    </div>		-->
 
                                 </div>
                             </div>
@@ -494,8 +557,8 @@
                 &copy; 2014  All Rights Reserved. Design by <a href="//templatemonster.com">computertimesltd.com</a>. <a href="http://www.computertimesltd.com" target="_blank">Computer Times</a>.
             </div>
         </footer>
-        <script src="/services/javascripts/currencies.js" type="text/javascript"></script>
-        <script src="//cdn.shopify.com/s/files/1/0308/1345/t/2/assets/jquery.currencies.min.js?7524" type="text/javascript"></script>
+        <script src="<?php echo base_url('assets/js/currencies.js'); ?>" type="text/javascript"></script>
+        <script src="<?php echo base_url('assets/js/jqueryCurrencies.js'); ?>" type="text/javascript"></script>
         <script>
 
 
