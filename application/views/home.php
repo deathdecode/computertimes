@@ -57,7 +57,7 @@
         <script src="<?php echo base_url('assets/js/option_selection.js'); ?>" type="text/javascript"></script>
         <script src="<?php echo base_url('assets/js/jquery-1.10.2.min.js'); ?>" type="text/javascript"></script>  
 
-        <script src="<?php echo base_url('assets/js/bootstrap7524.css'); ?>" type="text/javascript"></script>
+        <script src="<?php echo base_url('assets/js/bootstrap7524.js'); ?>" type="text/javascript"></script>
         <script src="<?php echo base_url('assets/js/jquery-migrate-1.2.1.min7524.js'); ?>" type="text/javascript"></script>
         <script src="<?php echo base_url('assets/js/shop7524.js'); ?>" type="text/javascript"></script>
         <script src="<?php echo base_url('assets/js/jquery.nivoslider7524.js'); ?>" type="text/javascript"></script>
@@ -155,28 +155,28 @@
                                 </li>
 
                                 <li class="">
-                                    <a href="/blogs/news" title="">Notebook</a>
+                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Notebook</a>
                                 </li>
                                 <li class="">
-                                    <a href="/pages/documentation" title="">Desktop</a>
+                                    <a href="<?php base_url().'getpagecontents/desktop'?>" title="">Desktop</a>
                                 </li>
                                 <li class=" last">
-                                    <a href="/pages/contacts" title="">Tablet</a>
+                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Tablet</a>
                                 </li>
                                 <li class="">
-                                    <a href="/blogs/news" title="">Printer</a>
+                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Printer</a>
                                 </li>
                                 <li class="">
-                                    <a href="/pages/documentation" title="">Software</a>
+                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Software</a>
                                 </li>
                                 <li class=" last">
-                                    <a href="/pages/contacts" title="">Networking</a>
+                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Networking</a>
                                 </li>
                                 <li class="">
-                                    <a href="/blogs/news" title="">Printing Accessories</a>
+                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Printing Accessories</a>
                                 </li>
                                 <li class="">
-                                    <a href="/pages/documentation" title="">Solution</a>
+                                    <a href="<?php base_url().'getpagecontents/notebook'?>" title="">Solution</a>
                                 </li>
                             </ul>
                             <script>
@@ -192,13 +192,13 @@
             <div id="slider_wrap" class="container">
                 <div id="slider">
                     <a href="/products/product03">
-                        <img src="//cdn.shopify.com/s/files/1/0308/1345/t/2/assets/slide_1_image.jpg?7524" title="#htmlcaption-1" />
+                        <img src="<?php echo base_url('images/toshiba-slide.jpg'); ?>" title="#htmlcaption-1" />
                     </a>
                     <a href="/products/product01">
-                        <img src="//cdn.shopify.com/s/files/1/0308/1345/t/2/assets/slide_2_image.jpg?7524" title="#htmlcaption-2" />
+                        <img src="<?php echo base_url('images/lenovo-slide.jpg'); ?>" title="#htmlcaption-2" />
                     </a>
                     <a href="/products/product07">
-                        <img src="//cdn.shopify.com/s/files/1/0308/1345/t/2/assets/slide_3_image.jpg?7524" title="#htmlcaption-3" />
+                        <img src="<?php echo base_url('images/samsung-slide.jpg'); ?>" title="#htmlcaption-3" />
                     </a>
                 </div>
             </div>
@@ -263,7 +263,7 @@
 
                     <div class="banner banner_1 col-sm-3 col-xs-6">
                         <a class="trs_bg" href="/collections/hard-drives">
-                            <img src="//cdn.shopify.com/s/files/1/0308/1345/t/2/assets/banner_1_img.png?7524" alt="" />
+                            <img src="<?php echo base_url('images/banner_1_img.png'); ?>" alt="" />
                             <h3>Tablets</h3>
                             <p>Lorem ipsum dolor sit amet conse ctetur adipisicing</p>
                             <i class="fa fa-arrow-circle-o-right"></i>
@@ -272,7 +272,7 @@
 
                     <div class="banner banner_2 col-sm-3 col-xs-6">
                         <a class="trs_bg" href="/collections/accessories">
-                            <img src="//cdn.shopify.com/s/files/1/0308/1345/t/2/assets/banner_2_img.png?7524" alt="" />
+                            <img src="<?php echo base_url('images/banner_2_img.png'); ?>" alt="" />
                             <h3>Notebooks</h3>
                             <p>Lorem ipsum dolor sit amet conse ctetur adipisicing</p>
                             <i class="fa fa-arrow-circle-o-right"></i>
@@ -281,7 +281,7 @@
 
                     <div class="banner banner_3 col-sm-3 col-xs-6">
                         <a class="trs_bg" href="/collections/monitors">
-                            <img src="//cdn.shopify.com/s/files/1/0308/1345/t/2/assets/banner_3_img.png?7524" alt="" />
+                            <img src="<?php echo base_url('images/banner_3_img.png'); ?>" alt="" />
                             <h3>Monitors</h3>
                             <p>Lorem ipsum dolor sit amet conse ctetur adipisicing</p>
                             <i class="fa fa-arrow-circle-o-right"></i>
@@ -290,7 +290,7 @@
 
                     <div class="banner banner_4 col-sm-3 col-xs-6">
                         <a class="trs_bg" href="/collections/CPUs">
-                            <img src="//cdn.shopify.com/s/files/1/0308/1345/t/2/assets/banner_4_img.png?7524" alt="" />
+                            <img src="<?php echo base_url('images/banner_4_img.png'); ?>" alt="" />
                             <h3>CPUs</h3>
                             <p>Lorem ipsum dolor sit amet conse ctetur adipisicing</p>
                             <i class="fa fa-arrow-circle-o-right"></i>
@@ -626,8 +626,8 @@
                 &copy; 2014  All Rights Reserved. Design by <a href="//templatemonster.com">computertimesltd.com</a>. <a href="http://www.computertimesltd.com" target="_blank">Computer Times</a>.
             </div>
         </footer>
-        <script src="/services/javascripts/currencies.js" type="text/javascript"></script>
-        <script src="//cdn.shopify.com/s/files/1/0308/1345/t/2/assets/jquery.currencies.min.js?7524" type="text/javascript"></script>
+        <script src="<?php echo base_url('assets/js/currencies.js'); ?>" type="text/javascript"></script>
+        <script src="<?php echo base_url('assets/js/jqueryCurrencies.js'); ?>" type="text/javascript"></script>
         <script>
 
 
