@@ -82,7 +82,7 @@
                 <div class="container">
                     <!-- logo -->
                     <h1 id="site-title">
-                        <a class="trs_color" href="/">Computer Times <br>Limited</a>
+                        <a class="trs_color" href="<?php echo base_url();?>">Computer Times <br>Limited</a>
                     </h1>
                     <!-- tiles -->
                     <div class="header_tiles">

@@ -82,7 +82,7 @@
                 <div class="container">
                     <!-- logo -->
                     <h1 id="site-title">
-                        <a class="trs_color" href="/">Computer Times <br>Limited</a>
+                        <a class="trs_color" href="<?php echo base_url();?>">Computer Times <br>Limited</a>
                     </h1>
                     <!-- tiles -->
                     <div class="header_tiles">
@@ -214,8 +214,8 @@
                     </div>
                     <div class="caption_content caption_content-1">
                         <a class="trs_bg" href="/products/product03">
-                            <h3><i class="fa fa-arrow-circle-o-right"></i>Lorem ipsum dolor sit amet</h3>
-                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc</p>
+                            <h3><i class="fa fa-arrow-circle-o-right"></i>TOSHIBA</h3>
+                            <p>This is Toshiba</p>
                         </a>
                     </div>
                 </div>
@@ -227,8 +227,8 @@
                     </div>
                     <div class="caption_content caption_content-2">
                         <a class="trs_bg" href="/products/product01">
-                            <h3><i class="fa fa-arrow-circle-o-right"></i>Ipsum dolor sit amet</h3>
-                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc</p>
+                            <h3><i class="fa fa-arrow-circle-o-right"></i>Lenovo</h3>
+                            <p>This is Lenovo</p>
                         </a>
                     </div>
                 </div>
@@ -240,8 +240,8 @@
                     </div>
                     <div class="caption_content caption_content-3">
                         <a class="trs_bg" href="/products/product07">
-                            <h3><i class="fa fa-arrow-circle-o-right"></i>Set magna dolor sit amet</h3>
-                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc</p>
+                            <h3><i class="fa fa-arrow-circle-o-right"></i>Samsung</h3>
+                            <p>This is Samsung</p>
                         </a>
                     </div>
                 </div>
@@ -249,7 +249,7 @@
             <script type="text/javascript">
                 $(window).load(function() {
                     $('#slider').nivoSlider({
-                        effect: 'fad e',
+                        effect: 'fade',
                         animSpeed: 500,
                         pauseTime: 7000,
                         startSlide: 0,
