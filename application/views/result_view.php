@@ -86,7 +86,7 @@
                 <div class="container">
                     <!-- logo -->
                     <h1 id="site-title">
-                        <a class="trs_color" href="<?php echo base_url(); ?>">Computer Times <br>Limited</a>
+                        <a class="trs_color" href="<?php echo base_url();?>"> <img src="<?php echo base_url()."images/ctlheader.jpg";?>" /></a>
                     </h1>
                     <!-- tiles -->
                     <div class="header_tiles">
@@ -113,9 +113,9 @@
                                 <a href="https://www.pinterest.com/computertimesltd/"><i class="fa fa-pinterest"></i></a>
                             </li>
                             <!-- customer -->
-                            <!--                            <li class="tile tile_customer trs_scale">
-                                                            <a href="/account/login" id="customer_login_link"><i class='fa fa-user'></i></a>
-                                                        </li>-->
+<!--                            <li class="tile tile_customer trs_scale">
+                                <a href="/account/login" id="customer_login_link"><i class='fa fa-user'></i></a>
+                            </li>-->
                             <!-- currency -->
                         </ul>
                         <!--
@@ -140,7 +140,7 @@
                         -->  
                     </div>
                     <!-- Navigation -->
-                    <div id="navigation" style="margin-top: 25px;">
+                    <div id="navigation" >
                         <nav role="navigation">
                             <ul class="sf-menu nav">                                
                                 <li class="">
@@ -159,31 +159,31 @@
                                 </li>
 
                                 <li class="">
-                                    <a href="<?php print_r(base_url() . 'getpagecontents/notebook'); ?>" title="">Notebook</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/notebook');?>" title="">Notebook</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php print_r(base_url() . 'getpagecontents/laptop'); ?>" title="">Laptop</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/laptop');?>" title="">Laptop</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php print_r(base_url() . 'getpagecontents/desktop'); ?>" title="">Desktop</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/desktop');?>" title="">Desktop</a>
                                 </li>
                                 <li class=" last">
-                                    <a href="<?php print_r(base_url() . 'getpagecontents/tablet'); ?>" title="">Tablet</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/tablet');?>" title="">Tablet</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php print_r(base_url() . 'getpagecontents/printer'); ?>" title="">Printer</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/printer');?>" title="">Printer</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php print_r(base_url() . 'getpagecontents/software'); ?>" title="">Software</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/software');?>" title="">Software</a>
                                 </li>
                                 <li class=" last">
-                                    <a href="<?php print_r(base_url() . 'getpagecontents/networking'); ?>" title="">Networking</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/networking');?>" title="">Networking</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php print_r(base_url() . 'getpagecontents/printingaccessories'); ?>" title="">Printing Accessories</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/printingaccessories');?>" title="">Printing Accessories</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php print_r(base_url() . 'getpagecontents/solutions'); ?>" title="">Solution</a>
+                                    <a href="<?php print_r(base_url().'getpagecontents/solutions');?>" title="">Solution</a>
                                 </li>
                             </ul>
                             <script>

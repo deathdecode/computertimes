@@ -82,7 +82,7 @@
                 <div class="container">
                     <!-- logo -->
                     <h1 id="site-title">
-                        <a class="trs_color" href="<?php echo base_url();?>">Computer Times <br>Limited</a>
+                        <a class="trs_color" href="<?php echo base_url();?>"> <img src="<?php echo base_url()."images/ctlheader.jpg";?>" /></a>
                     </h1>
                     <!-- tiles -->
                     <div class="header_tiles">
@@ -136,7 +136,7 @@
                         -->  
                     </div>
                     <!-- Navigation -->
-                    <div id="navigation" style="margin-top: 25px;">
+                    <div id="navigation" >
                         <nav role="navigation">
                             <ul class="sf-menu nav">                                
                                 <li class="">
