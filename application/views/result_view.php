@@ -20,7 +20,11 @@
                     }
                 }
                 window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
+                
+                
+                
             })();
+            
 
             //]]>
 
@@ -217,7 +221,7 @@
                                         } else if ($rowNo % 3 == 0) {
                                             echo '</div><div class = "row">';
                                         }
-                                        echo '<div id = "'.$rowNo.'" class="products col-md-4 product product__product-grid-item" data-toggle ="modal" data-target="#showProduct">
+                                        echo '<div id = "'.$rowNo.'" class="products col-md-4 product product__product-grid-item" data-toggle ="modal" data-target="#showProduct" >
                                         <div class="">  
                                             <a href="/products/product01">
                                                 <img src = "' . base_url() . 'images/' . $row->imagename . '" height="250px" width ="250px"/></a>
@@ -479,7 +483,7 @@
 
                                 </div>
                             </div>
-                            <?php $this->load->view("productmodal"); ?>
+                            <?php $this->load->view("productmodal",$alldata_desktop); ?>
 
                         </div>
 

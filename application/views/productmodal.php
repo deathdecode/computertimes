@@ -4,8 +4,13 @@
     {
         $('.products').click(function() {
             var id = $(this).attr('id');
-            //$("#product_image").html("<img src = \"images/"+<?php //echo $alldata_desktop[0]->imagename;?>+"\">");
-            alert("<img src = \"images/"+<?php echo $alldata_desktop[0]->imagename;?>+"\">");
+            var alldata_desktop = <?php echo json_encode($alldata_desktop); ?>;
+                    //console.log(alldata_desktop);
+                    console.log(alldata_desktop[id]);
+            $("#product_image").html('<img class="img-responsive" src = "<?php echo base_url();?>images/'+alldata_desktop[id].imagename+'"/>');
+            $("#product-description").html(alldata_desktop[id].pdesc);
+            $("#product_name").html(alldata_desktop[id].pname);
+            //alert("<img src = \"images/"+<?php ?>+"\">");
             
 //            window.location.href = "result_view?product_id=" + id;
         });        
@@ -17,7 +22,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel"><?php echo $category;?></h4>
+                <h4 class="modal-title" id="myModalLabel"><div id ="product_name"></div></h4>
             </div>
             <div class="modal-body">
                 <div class ="row">
