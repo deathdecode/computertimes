@@ -90,23 +90,23 @@
                         <ul class="header_tiles-1">
                             <!-- home -->
                             <li class="tile tile_home trs_scale">
-                                <a href="/"><i class="fa fa-home"></i></a>
+                                <a href="<?php echo base_url();?>"><i class="fa fa-home"></i></a>
                             </li>
                             <!-- twitter -->
                             <li class="tile tile_twi trs_scale">
-                                <a href="https://twitter.com/computertimesltd"><i class="fa fa-twitter"></i></a>
+                                <a href="https://twitter.com/computertimesltd" target ="_blank"><i class="fa fa-twitter"></i></a>
                             </li>
                             <!-- google+ -->
                             <li class="tile tile_gpl trs_scale">
-                                <a href="https://google.com/computertimesltd"><i class="fa fa-google-plus"></i></a>
+                                <a href="https://google.com/computertimesltd" target ="_blank"><i class="fa fa-google-plus"></i></a>
                             </li>
                             <!-- facebook -->
                             <li class="tile tile_fcb trs_scale">
-                                <a href="https://www.facebook.com/computertimesltd"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/computertimesltd" target ="_blank"><i class="fa fa-facebook"></i></a>
                             </li>
                             <!-- pinterest -->
                             <li class="tile tile_pin trs_scale">
-                                <a href="https://www.pinterest.com/computertimesltd/"><i class="fa fa-pinterest"></i></a>
+                                <a href="https://www.pinterest.com/computertimesltd/" target ="_blank"><i class="fa fa-pinterest"></i></a>
                             </li>
                             <!-- customer -->
 <!--                            <li class="tile tile_customer trs_scale">
@@ -140,16 +140,16 @@
                         <nav role="navigation">
                             <ul class="sf-menu nav">                                
                                 <li class="">
-                                    <a href="/pages/about-us" title="">About Us</a>
+                                    <a href="" title="">About Us</a>
                                     <ul>
                                         <li class=" first">
-                                            <a class="first" href="/collections/accessories">About</a>
+                                            <a class="first" href="">About</a>
                                         </li>
                                         <li class="">
-                                            <a class="" href="/collections/cpus">Why Us</a>
+                                            <a class="" href="">Why Us</a>
                                         </li>
                                         <li class="">
-                                            <a class="" href="/collections/hard-drives">Mission & Vission</a>
+                                            <a class="" href="">Mission & Vission</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -194,13 +194,13 @@
             <!-- slider -->
             <div id="slider_wrap" class="container">
                 <div id="slider">
-                    <a href="/products/product03">
+                    <a href="">
                         <img src="<?php echo base_url('images/toshiba-slide.jpg'); ?>" title="#htmlcaption-1" />
                     </a>
-                    <a href="/products/product01">
+                    <a href="">
                         <img src="<?php echo base_url('images/lenovo-slide.jpg'); ?>" title="#htmlcaption-2" />
                     </a>
-                    <a href="/products/product07">
+                    <a href="">
                         <img src="<?php echo base_url('images/samsung-slide.jpg'); ?>" title="#htmlcaption-3" />
                     </a>
                 </div>
@@ -208,12 +208,12 @@
             <div class="caption_hidden">
                 <div id="htmlcaption-1">
                     <div class="caption_title caption_title-1">
-                        <a class="trs_bg" href="/products/product03">
+                        <a class="trs_bg" href="">
                             TOSHIBA
                         </a>
                     </div>
                     <div class="caption_content caption_content-1">
-                        <a class="trs_bg" href="/products/product03">
+                        <a class="trs_bg" href="">
                             <h3><i class="fa fa-arrow-circle-o-right"></i>TOSHIBA</h3>
                             <p>This is Toshiba</p>
                         </a>
@@ -221,12 +221,12 @@
                 </div>
                 <div id="htmlcaption-2">
                     <div class="caption_title caption_title-2">
-                        <a class="trs_bg" href="/products/product01">
+                        <a class="trs_bg" href="">
                             Lenovo
                         </a>
                     </div>
                     <div class="caption_content caption_content-2">
-                        <a class="trs_bg" href="/products/product01">
+                        <a class="trs_bg" href="">
                             <h3><i class="fa fa-arrow-circle-o-right"></i>Lenovo</h3>
                             <p>This is Lenovo</p>
                         </a>
@@ -234,12 +234,12 @@
                 </div>
                 <div id="htmlcaption-3">
                     <div class="caption_title caption_title-3">
-                        <a class="trs_bg" href="/products/product07">
+                        <a class="trs_bg" href="">
                             Samsung
                         </a>
                     </div>
                     <div class="caption_content caption_content-3">
-                        <a class="trs_bg" href="/products/product07">
+                        <a class="trs_bg" href="">
                             <h3><i class="fa fa-arrow-circle-o-right"></i>Samsung</h3>
                             <p>This is Samsung</p>
                         </a>
@@ -265,37 +265,37 @@
                 <div class="row clearfix">
 
                     <div class="banner banner_1 col-sm-3 col-xs-6">
-                        <a class="trs_bg" href="/collections/hard-drives">
+                        <a class="trs_bg" href="">
                             <img src="<?php echo base_url('images/banner_1_img.png'); ?>" alt="" />
                             <h3>Tablets</h3>
-                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing</p>
+                            <p></p>
                             <i class="fa fa-arrow-circle-o-right"></i>
                         </a>
                     </div>
 
                     <div class="banner banner_2 col-sm-3 col-xs-6">
-                        <a class="trs_bg" href="/collections/accessories">
+                        <a class="trs_bg" href="">
                             <img src="<?php echo base_url('images/banner_2_img.png'); ?>" alt="" />
                             <h3>Notebooks</h3>
-                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing</p>
+                            <p></p>
                             <i class="fa fa-arrow-circle-o-right"></i>
                         </a>
                     </div>
 
                     <div class="banner banner_3 col-sm-3 col-xs-6">
-                        <a class="trs_bg" href="/collections/monitors">
+                        <a class="trs_bg" href="">
                             <img src="<?php echo base_url('images/banner_3_img.png'); ?>" alt="" />
                             <h3>Monitors</h3>
-                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing</p>
+                            <p></p>
                             <i class="fa fa-arrow-circle-o-right"></i>
                         </a>
                     </div>
 
                     <div class="banner banner_4 col-sm-3 col-xs-6">
-                        <a class="trs_bg" href="/collections/CPUs">
+                        <a class="trs_bg" href="">
                             <img src="<?php echo base_url('images/banner_4_img.png'); ?>" alt="" />
                             <h3>CPUs</h3>
-                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing</p>
+                            <p></p>
                             <i class="fa fa-arrow-circle-o-right"></i>
                         </a>
                     </div>
@@ -314,7 +314,7 @@
                                 <div class="row">
                                     <div class="product product__product-grid-item col-sm-3 item_odd step3-1 step4-1">
                                         <div class="product_image-wrap">  
-                                            <a href="/products/product01">
+                                            <a href="">
                                                 <img src="//cdn.shopify.com/s/files/1/0308/1345/products/apple_ipad_2_16gb_wi-fi_black_1_medium.jpeg?v=1385997009" alt="Apple iPad 2 (16GB Wi-Fi. Black)" />
                                             </a>
                                         </div> .prod-image-wrap 
