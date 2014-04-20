@@ -27,7 +27,7 @@ class GetPageContents extends CI_Controller {
      * @see http://codeigniter.com/user_guide/general/urls.html
      */
     public function index() {
-        $this->load->view('uploadProduct', $this->data);
+        $this->laptop();
     }
     
     public function desktop() {
@@ -74,7 +74,7 @@ class GetPageContents extends CI_Controller {
     }
     public function printingaccessories() {
         $this->load->model('UploadProductModel');
-        $this->data['category'] = "printingaccessories"; 
+        $this->data['category'] = "printeraccessories"; 
         $this->data['alldata_desktop'] = $this->UploadProductModel->get_product($this->data['category']);
         $this->load->view('result_view',  $this->data);
     }

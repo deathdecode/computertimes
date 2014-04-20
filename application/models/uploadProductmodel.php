@@ -42,7 +42,11 @@ class UploadProductModel extends CI_Model
     public function get_product($ptype){
         $this->load->database();
         $query = $this->db->query("select * from products where ptype ='".$ptype."'");
-        return $query->result();
-        
+        return $query->result();        
+    }
+    public function recent_product(){
+        $this->load->database();
+        $query = $this->db->query("SELECT * FROM products ORDER BY pid DESC LIMIT 12");
+        return $query->result();        
     }
 }

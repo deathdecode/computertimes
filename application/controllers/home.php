@@ -27,7 +27,13 @@ class Home extends CI_Controller {
      * @see http://codeigniter.com/user_guide/general/urls.html
      */
     public function index() {
-        $this->load->view('home');
+        $this->recent_product();
+    }
+    public function recent_product() {
+        $this->load->model('UploadProductModel');
+        $this->data['category'] = "Recent Products"; 
+        $this->data['alldata_desktop'] = $this->UploadProductModel->recent_product();
+        $this->load->view('home',  $this->data);
     }
 }
 

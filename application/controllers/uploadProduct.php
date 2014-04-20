@@ -47,12 +47,15 @@ class UploadProduct extends CI_Controller {
         );
         $this->data['options'] = array(
             'desktop' => 'Desktop',
-            'laptop' => 'Laptop',
             'networking' => 'Networking',
             'printer' => 'Printer',
             'notebook' => 'Notebook',
             'tablet' => 'Tablet',
-            'printeraccessories' => 'Printing Accessories'
+            'printeraccessories' => 'Printing Accessories',
+            'peripheral' => 'Peripheral',
+            'software' => 'Software',
+            'enterpriseSolution' => 'Enterprise Solution',
+            'webdevelopment' => 'Web Development'
         );
         $this->data['products']=array(
             'name' => 'products',

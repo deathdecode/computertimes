@@ -181,6 +181,9 @@
                                 <li class="">
                                     <a href="<?php print_r(base_url().'getpagecontents/solutions');?>" title="">Solution</a>
                                 </li>
+                                <li class="">
+                                    <a href="<?php print_r(base_url().'getpagecontents/contactus');?>" title="">Contact Us</a>
+                                </li>
                             </ul>
                             <script>
                                 jQuery(function($) {
@@ -309,251 +312,287 @@
                     <!-- center column -->
                     <div id="main_content" class="col-sm-12">
                         <div class="index-scope">
-                            <h3 class="page_title">New Products</h3>
+                            <h3 class="page_title">
+
+                                <?php
+                                $str = strtoupper($category);
+                                echo $str;
+                                ?>
+
+                            </h3>
                             <div class="product-listing product-listing__index">
                                 <div class="row">
-                                    <div class="product product__product-grid-item col-sm-3 item_odd step3-1 step4-1">
-                                        <div class="product_image-wrap">  
-                                            <a href="">
-                                                <img src="//cdn.shopify.com/s/files/1/0308/1345/products/apple_ipad_2_16gb_wi-fi_black_1_medium.jpeg?v=1385997009" alt="Apple iPad 2 (16GB Wi-Fi. Black)" />
-                                            </a>
-                                        </div> .prod-image-wrap 
-                                        <div class="product_title-wrap">
-                                            <a href="/products/product01" class="product_title">
-                                                Apple iPad 2 (16GB Wi-Fi. Black)
+                                    <?php
+                                    $rowNo = 0;
+                                    foreach ($alldata_desktop as $row) {
+                                        if ($rowNo % 3 == 0 && $rowNo == 0) {
+                                            echo '<div class = "row">';
+                                        } else if ($rowNo % 3 == 0) {
+                                            echo '</div><div class = "row">';
+                                        }
+                                        echo '<div id = "'.$rowNo.'" class="products col-md-4 product product__product-grid-item" data-toggle ="modal" data-target="#showProduct" >
+                                        <div class="">  
+                                            <a href="/products/product01">
+                                                <img src = "' . base_url() . 'images/' . $row->imagename . '" height="250px" width ="250px"/></a>
+                                        </div>
+                                        <div class="product_add trs_bg">
+                                            <a href="/products/product01" class="">
+                                                ' . $row->pname . '
                                             </a>
                                         </div>
                                         <div class="product_price">
-                                            <span class="money">$199.00</span>
-                                            <a class="product_info trs_bg" href="/products/product01"><i class="fa fa-info"></i></a>
-                                            <form method="post" action="/cart/add">
-                                                <input type="hidden" name="id" value="427921129" />
-                                                <input class="product_add trs_bg" class="btn" type="submit" value="" />
-                                            </form>
+                                            <span class="money">Price <img src ="' . base_url() . 'images/BDT_icon.png' . '" height="23px" width ="20px">' . $row->pprice . '</span>
                                         </div>
-                                    </div>
-                                    <div class="product product__product-grid-item col-sm-3 item_even step3-2 step4-2">
-                                        <div class="product_image-wrap">  
-                                            <a href="/products/product02">
-                                                <img src="//cdn.shopify.com/s/files/1/0308/1345/products/dell_inspiron_1520_2_medium.jpg?v=1386260727" alt="Dell Inspiron 1520" />
-                                            </a>
-                                        </div> .prod-image-wrap 
-                                        <div class="product_title-wrap">
-                                            <a href="/products/product02" class="product_title">
-                                                Dell Inspiron 1520
-                                            </a>
-                                        </div>
-
-                                        <div class="product_price">
-                                            <span class="money">$60.00</span>
-                                            <a class="product_info trs_bg" href="/products/product02"><i class="fa fa-info"></i></a>
-                                            <form method="post" action="/cart/add">
-                                                <input type="hidden" name="id" value="427921329" />
-                                                <input class="product_add trs_bg" class="btn" type="submit" value="" />
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="product product__product-grid-item col-sm-3 item_odd step3-3 step4-3">
-
-                                        <div class="product_image-wrap">  
-                                            <a href="/products/product03">
-                                                <img src="//cdn.shopify.com/s/files/1/0308/1345/products/apple_macbook_pro_13_2-7ghz_i7_1_medium.jpeg?v=1385997044" alt="Apple MacBook Pro (13&#39;&#39; 2.7GHz i7)" />
-                                            </a>
-                                        </div> .prod-image-wrap 
-
-
-                                        <div class="product_title-wrap">
-                                            <a href="/products/product03" class="product_title">
-                                                Apple MacBook Pro (13'' 2.7GHz i7)
-                                            </a>
-                                        </div>
-
-                                        <div class="product_price">
-                                            <span class="money">$78.00</span>
-                                            <a class="product_info trs_bg" href="/products/product03"><i class="fa fa-info"></i></a>
-                                            <form method="post" action="/cart/add">
-                                                <input type="hidden" name="id" value="427921429" />
-                                                <input class="product_add trs_bg" class="btn" type="submit" value="" />
-                                            </form>
-                                        </div>
-                                    </div>
-
-                                    <div class="product product__product-grid-item col-sm-3 item_even step3-1 step4-4">
-
-                                        <div class="product_image-wrap">  
-                                            <a href="/products/product04">
-                                                <img src="//cdn.shopify.com/s/files/1/0308/1345/products/iomega_ego_1_tb_usb_2-0_desktop_external_hard_drive_3_medium.jpeg?v=1385997064" alt="Iomega eGo 1 TB USB 2.0 Desktop External Hard Drive" />
-                                            </a>
-                                        </div> .prod-image-wrap 
-                                        <div class="product_title-wrap">
-                                            <a href="/products/product04" class="product_title">
-                                                Iomega eGo 1 TB USB 2.0 Desktop External Hard Drive
-                                            </a>
-                                        </div>
-
-                                        <div class="product_price">
-                                            <span class="money">$399.00</span>
-                                            <a class="product_info trs_bg" href="/products/product04"><i class="fa fa-info"></i></a>
-                                            <form method="post" action="/cart/add">
-
-                                                <input type="hidden" name="id" value="427921605" />
-
-
-                                                <input class="product_add trs_bg" class="btn" type="submit" value="" />
-
-                                            </form>
-                                        </div>
-
-                                    </div>
-                                    <div class="product product__product-grid-item col-sm-3 alphaitem_odd step3-2 step4-1">
-
-                                        <div class="product_image-wrap">  
-                                            <a href="/products/product05">
-                                                <img src="//cdn.shopify.com/s/files/1/0308/1345/products/microsoft_lifecam_cinema_hd_webcam_1_medium.jpeg?v=1385997075" alt="Microsoft LifeCam Cinema HD Webcam" />
-                                            </a>
-                                        </div> .prod-image-wrap 
-
-
-                                        <div class="product_title-wrap">
-                                            <a href="/products/product05" class="product_title">
-                                                Microsoft LifeCam Cinema HD Webcam
-                                            </a>
-                                        </div>
-
-                                        <div class="product_price">
-                                            <span class="money">$420.00</span>
-                                            <a class="product_info trs_bg" href="/products/product05"><i class="fa fa-info"></i></a>
-                                            <form method="post" action="/cart/add">
-
-                                                <input type="hidden" name="id" value="427921721" />
-
-
-                                                <input class="product_add trs_bg" class="btn" type="submit" value="" />
-
-                                            </form>
-                                        </div>
-
-                                    </div>		
-
-
-
-
-
-
-
-
-
-
-                                    <div class="product product__product-grid-item col-sm-3 item_even step3-3 step4-2">
-
-                                        <div class="product_image-wrap">  
-                                            <a href="/products/product06">
-                                                <img src="//cdn.shopify.com/s/files/1/0308/1345/products/logitech_v450_nano_cordless_laser_mouse_for_notebooks_3_medium.jpeg?v=1385997082" alt="Logitech V450 Nano Cordless Laser Mouse for Notebooks" />
-                                            </a>
-                                        </div> .prod-image-wrap 
-
-
-                                        <div class="product_title-wrap">
-                                            <a href="/products/product06" class="product_title">
-                                                Logitech V450 Nano Cordless Laser Mouse for Notebooks
-                                            </a>
-                                        </div>
-
-                                        <div class="product_price">
-                                            <span class="money">$170.00</span>
-                                            <a class="product_info trs_bg" href="/products/product06"><i class="fa fa-info"></i></a>
-                                            <form method="post" action="/cart/add">
-
-                                                <input type="hidden" name="id" value="427921777" />
-
-
-                                                <input class="product_add trs_bg" class="btn" type="submit" value="" />
-
-                                            </form>
-                                        </div>
-
-                                    </div>		
-
-
-
-
-
-
-
-
-
-
-                                    <div class="product product__product-grid-item col-sm-3 item_odd step3-1 step4-3">
-
-                                        <div class="product_image-wrap">  
-                                            <a href="/products/product07">
-                                                <img src="//cdn.shopify.com/s/files/1/0308/1345/products/gateway_nv7923u_17-3-inch_laptop_3_medium.jpeg?v=1385997098" alt="Gateway NV7922u 17.3-Inch Laptop" />
-                                            </a>
-                                        </div> .prod-image-wrap 
-
-
-                                        <div class="product_title-wrap">
-                                            <a href="/products/product07" class="product_title">
-                                                Gateway NV7922u 17.3-Inch Laptop
-                                            </a>
-                                        </div>
-
-                                        <div class="product_price">
-                                            <span class="money">$320.00</span>
-                                            <a class="product_info trs_bg" href="/products/product07"><i class="fa fa-info"></i></a>
-                                            <form method="post" action="/cart/add">
-
-                                                <input type="hidden" name="id" value="427922101" />
-
-
-                                                <input class="product_add trs_bg" class="btn" type="submit" value="" />
-
-                                            </form>
-                                        </div>
-
-                                    </div>		
-
-
-
-
-
-
-
-
-
-
-                                    <div class="product product__product-grid-item col-sm-3 item_even step3-2 step4-4">
-
-                                        <div class="product_image-wrap">  
-                                            <a href="/products/product08">
-                                                <img src="//cdn.shopify.com/s/files/1/0308/1345/products/corsair_new_carbide_pc_cases_1_medium.jpeg?v=1385997110" alt="Corsair New Carbide PC Cases" />
-                                            </a>
-                                        </div> .prod-image-wrap 
-
-
-                                        <div class="product_title-wrap">
-                                            <a href="/products/product08" class="product_title">
-                                                Corsair New Carbide PC Cases
-                                            </a>
-                                        </div>
-
-                                        <div class="product_price">
-                                            <span class="money">$265.00</span>
-                                            <a class="product_info trs_bg" href="/products/product08"><i class="fa fa-info"></i></a>
-                                            <form method="post" action="/cart/add">
-
-                                                <input type="hidden" name="id" value="427922213" />
-
-
-                                                <input class="product_add trs_bg" class="btn" type="submit" value="" />
-
-                                            </form>
-                                        </div>
-
-                                    </div>		
+                                    </div>';
+                                        $rowNo++;
+                                    }
+                                    if ($rowNo > 0) {
+                                        echo '</div>';
+                                    }
+                                    ?>
+                                    <!--                                    <div class="product product__product-grid-item col-sm-3 item_odd step3-1 step4-1">
+                                                                            <div class="product_image-wrap">  
+                                                                                <a href="/products/product01">
+<?php //echo '<img src = "'.base_url().'images/'.$alldata_desktop[0]->imagename.'" height="100px" width ="100px"/>'; ?>
+                                                                                </a>
+                                                                            </div> .prod-image-wrap 
+                                                                            <div class="product_title-wrap">
+                                                                                <a href="/products/product01" class="product_title">
+                                                                                    Apple iPad 2 (16GB Wi-Fi. Black)
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="product_price">
+                                                                                <span class="money">$199.00</span>
+                                                                                <a class="product_info trs_bg" href="/products/product01"><i class="fa fa-info"></i></a>
+                                                                                <form method="post" action="/cart/add">
+                                                                                    <input type="hidden" name="id" value="427921129" />
+                                                                                    <input class="product_add trs_bg" class="btn" type="submit" value="" />
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="product product__product-grid-item col-sm-3 item_even step3-2 step4-2">
+                                                                            <div class="product_image-wrap">  
+                                                                                <a href="/products/product02">
+                                                                                    <img src="//cdn.shopify.com/s/files/1/0308/1345/products/dell_inspiron_1520_2_medium.jpg?v=1386260727" alt="Dell Inspiron 1520" />
+                                                                                </a>
+                                                                            </div> .prod-image-wrap 
+                                                                            <div class="product_title-wrap">
+                                                                                <a href="/products/product02" class="product_title">
+                                                                                    Dell Inspiron 1520
+                                                                                </a>
+                                                                            </div>
+                                    
+                                                                            <div class="product_price">
+                                                                                <span class="money">$60.00</span>
+                                                                                <a class="product_info trs_bg" href="/products/product02"><i class="fa fa-info"></i></a>
+                                                                                <form method="post" action="/cart/add">
+                                                                                    <input type="hidden" name="id" value="427921329" />
+                                                                                    <input class="product_add trs_bg" class="btn" type="submit" value="" />
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="product product__product-grid-item col-sm-3 item_odd step3-3 step4-3">
+                                    
+                                                                            <div class="product_image-wrap">  
+                                                                                <a href="/products/product03">
+                                                                                    <img src="//cdn.shopify.com/s/files/1/0308/1345/products/apple_macbook_pro_13_2-7ghz_i7_1_medium.jpeg?v=1385997044" alt="Apple MacBook Pro (13&#39;&#39; 2.7GHz i7)" />
+                                                                                </a>
+                                                                            </div> .prod-image-wrap 
+                                    
+                                    
+                                                                            <div class="product_title-wrap">
+                                                                                <a href="/products/product03" class="product_title">
+                                                                                    Apple MacBook Pro (13'' 2.7GHz i7)
+                                                                                </a>
+                                                                            </div>
+                                    
+                                                                            <div class="product_price">
+                                                                                <span class="money">$78.00</span>
+                                                                                <a class="product_info trs_bg" href="/products/product03"><i class="fa fa-info"></i></a>
+                                                                                <form method="post" action="/cart/add">
+                                                                                    <input type="hidden" name="id" value="427921429" />
+                                                                                    <input class="product_add trs_bg" class="btn" type="submit" value="" />
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                    
+                                                                        <div class="product product__product-grid-item col-sm-3 item_even step3-1 step4-4">
+                                    
+                                                                            <div class="product_image-wrap">  
+                                                                                <a href="/products/product04">
+                                                                                    <img src="//cdn.shopify.com/s/files/1/0308/1345/products/iomega_ego_1_tb_usb_2-0_desktop_external_hard_drive_3_medium.jpeg?v=1385997064" alt="Iomega eGo 1 TB USB 2.0 Desktop External Hard Drive" />
+                                                                                </a>
+                                                                            </div> .prod-image-wrap 
+                                                                            <div class="product_title-wrap">
+                                                                                <a href="/products/product04" class="product_title">
+                                                                                    Iomega eGo 1 TB USB 2.0 Desktop External Hard Drive
+                                                                                </a>
+                                                                            </div>
+                                    
+                                                                            <div class="product_price">
+                                                                                <span class="money">$399.00</span>
+                                                                                <a class="product_info trs_bg" href="/products/product04"><i class="fa fa-info"></i></a>
+                                                                                <form method="post" action="/cart/add">
+                                    
+                                                                                    <input type="hidden" name="id" value="427921605" />
+                                    
+                                    
+                                                                                    <input class="product_add trs_bg" class="btn" type="submit" value="" />
+                                    
+                                                                                </form>
+                                                                            </div>
+                                    
+                                                                        </div>
+                                                                        <div class="product product__product-grid-item col-sm-3 alphaitem_odd step3-2 step4-1">
+                                    
+                                                                            <div class="product_image-wrap">  
+                                                                                <a href="/products/product05">
+                                                                                    <img src="//cdn.shopify.com/s/files/1/0308/1345/products/microsoft_lifecam_cinema_hd_webcam_1_medium.jpeg?v=1385997075" alt="Microsoft LifeCam Cinema HD Webcam" />
+                                                                                </a>
+                                                                            </div> .prod-image-wrap 
+                                    
+                                    
+                                                                            <div class="product_title-wrap">
+                                                                                <a href="/products/product05" class="product_title">
+                                                                                    Microsoft LifeCam Cinema HD Webcam
+                                                                                </a>
+                                                                            </div>
+                                    
+                                                                            <div class="product_price">
+                                                                                <span class="money">$420.00</span>
+                                                                                <a class="product_info trs_bg" href="/products/product05"><i class="fa fa-info"></i></a>
+                                                                                <form method="post" action="/cart/add">
+                                    
+                                                                                    <input type="hidden" name="id" value="427921721" />
+                                    
+                                    
+                                                                                    <input class="product_add trs_bg" class="btn" type="submit" value="" />
+                                    
+                                                                                </form>
+                                                                            </div>
+                                    
+                                                                        </div>		
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                                                        <div class="product product__product-grid-item col-sm-3 item_even step3-3 step4-2">
+                                    
+                                                                            <div class="product_image-wrap">  
+                                                                                <a href="/products/product06">
+                                                                                    <img src="//cdn.shopify.com/s/files/1/0308/1345/products/logitech_v450_nano_cordless_laser_mouse_for_notebooks_3_medium.jpeg?v=1385997082" alt="Logitech V450 Nano Cordless Laser Mouse for Notebooks" />
+                                                                                </a>
+                                                                            </div> .prod-image-wrap 
+                                    
+                                    
+                                                                            <div class="product_title-wrap">
+                                                                                <a href="/products/product06" class="product_title">
+                                                                                    Logitech V450 Nano Cordless Laser Mouse for Notebooks
+                                                                                </a>
+                                                                            </div>
+                                    
+                                                                            <div class="product_price">
+                                                                                <span class="money">$170.00</span>
+                                                                                <a class="product_info trs_bg" href="/products/product06"><i class="fa fa-info"></i></a>
+                                                                                <form method="post" action="/cart/add">
+                                    
+                                                                                    <input type="hidden" name="id" value="427921777" />
+                                    
+                                    
+                                                                                    <input class="product_add trs_bg" class="btn" type="submit" value="" />
+                                    
+                                                                                </form>
+                                                                            </div>
+                                    
+                                                                        </div>		
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                                                        <div class="product product__product-grid-item col-sm-3 item_odd step3-1 step4-3">
+                                    
+                                                                            <div class="product_image-wrap">  
+                                                                                <a href="/products/product07">
+                                                                                    <img src="//cdn.shopify.com/s/files/1/0308/1345/products/gateway_nv7923u_17-3-inch_laptop_3_medium.jpeg?v=1385997098" alt="Gateway NV7922u 17.3-Inch Laptop" />
+                                                                                </a>
+                                                                            </div> .prod-image-wrap 
+                                    
+                                    
+                                                                            <div class="product_title-wrap">
+                                                                                <a href="/products/product07" class="product_title">
+                                                                                    Gateway NV7922u 17.3-Inch Laptop
+                                                                                </a>
+                                                                            </div>
+                                    
+                                                                            <div class="product_price">
+                                                                                <span class="money">$320.00</span>
+                                                                                <a class="product_info trs_bg" href="/products/product07"><i class="fa fa-info"></i></a>
+                                                                                <form method="post" action="/cart/add">
+                                    
+                                                                                    <input type="hidden" name="id" value="427922101" />
+                                    
+                                    
+                                                                                    <input class="product_add trs_bg" class="btn" type="submit" value="" />
+                                    
+                                                                                </form>
+                                                                            </div>
+                                    
+                                                                        </div>		
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                                                        <div class="product product__product-grid-item col-sm-3 item_even step3-2 step4-4">
+                                    
+                                                                            <div class="product_image-wrap">  
+                                                                                <a href="/products/product08">
+                                                                                    <img src="//cdn.shopify.com/s/files/1/0308/1345/products/corsair_new_carbide_pc_cases_1_medium.jpeg?v=1385997110" alt="Corsair New Carbide PC Cases" />
+                                                                                </a>
+                                                                            </div> .prod-image-wrap 
+                                    
+                                    
+                                                                            <div class="product_title-wrap">
+                                                                                <a href="/products/product08" class="product_title">
+                                                                                    Corsair New Carbide PC Cases
+                                                                                </a>
+                                                                            </div>
+                                    
+                                                                            <div class="product_price">
+                                                                                <span class="money">$265.00</span>
+                                                                                <a class="product_info trs_bg" href="/products/product08"><i class="fa fa-info"></i></a>
+                                                                                <form method="post" action="/cart/add">
+                                    
+                                                                                    <input type="hidden" name="id" value="427922213" />
+                                    
+                                    
+                                                                                    <input class="product_add trs_bg" class="btn" type="submit" value="" />
+                                    
+                                                                                </form>
+                                                                            </div>
+                                    
+                                                                        </div>		-->
 
                                 </div>
                             </div>
+                            <?php $this->load->view("productmodal",$alldata_desktop); ?>
 
                         </div>
 
@@ -612,8 +651,8 @@
 
                     <div class="bottom_block_4 col-sm-3">
                         <h3>Contacts</h3>
-                        <p class="adr">Shop # 234, Level # 2,Shuvastu Archade, Elephant Road, Dhaka </p>
-                        <p class="tel"><i class="fa fa-phone-square"></i>Tel: +8804477970416</p>
+                        <p class="adr">Office: 234, Shuvastu Archade IT Park, Level-3, 46-48 New Elephant Road, Dhaka-1205 </p>
+                        <p class="tel"><i class="fa fa-phone-square"></i>Tel: +880-29615217, 04477970416<br>Cell: +880179601061</p>
                     </div>
 
                 </div>

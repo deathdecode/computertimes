@@ -16,7 +16,7 @@
                               
                 </div>
                 <div class ="row">
-                    <div class ="col-md-4 col-md-offset-4 "><?php echo $imagedesc; ?></div>
+                    <div class ="col-md-4 col-md-offset-4 "><?php echo $SuccessMessage; ?></div>
                 </div>
                 <div class ="row">
                     <div class ="col-md-12 form-horizontal form-background">

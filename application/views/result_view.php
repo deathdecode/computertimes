@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js"> 
+ <html class="no-js"> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title><?php echo $category; ?></title>
+        <title>Computer Times Ltd</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
         <script type="text/javascript">
             //<![CDATA[
@@ -20,14 +20,10 @@
                     }
                 }
                 window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
-                
-                
-                
             })();
-            
 
             //]]>
-
+            
         </script>
         <link href="<?php echo base_url('assets/css/bootstrap7524.css'); ?>" rel="stylesheet" type="text/css"  media="all"  /> 
         <link href="<?php echo base_url('assets/css/assets7524.css'); ?>" rel="stylesheet" type="text/css"  media="all"  /> 
@@ -94,23 +90,23 @@
                         <ul class="header_tiles-1">
                             <!-- home -->
                             <li class="tile tile_home trs_scale">
-                                <a href="/"><i class="fa fa-home"></i></a>
+                                <a href="<?php echo base_url();?>"><i class="fa fa-home"></i></a>
                             </li>
                             <!-- twitter -->
                             <li class="tile tile_twi trs_scale">
-                                <a href="https://twitter.com/computertimesltd"><i class="fa fa-twitter"></i></a>
+                                <a href="https://twitter.com/computertimesltd" target ="_blank"><i class="fa fa-twitter"></i></a>
                             </li>
                             <!-- google+ -->
                             <li class="tile tile_gpl trs_scale">
-                                <a href="https://google.com/computertimesltd"><i class="fa fa-google-plus"></i></a>
+                                <a href="https://google.com/computertimesltd" target ="_blank"><i class="fa fa-google-plus"></i></a>
                             </li>
                             <!-- facebook -->
                             <li class="tile tile_fcb trs_scale">
-                                <a href="https://www.facebook.com/computertimesltd"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/computertimesltd" target ="_blank"><i class="fa fa-facebook"></i></a>
                             </li>
                             <!-- pinterest -->
                             <li class="tile tile_pin trs_scale">
-                                <a href="https://www.pinterest.com/computertimesltd/"><i class="fa fa-pinterest"></i></a>
+                                <a href="https://www.pinterest.com/computertimesltd/" target ="_blank"><i class="fa fa-pinterest"></i></a>
                             </li>
                             <!-- customer -->
 <!--                            <li class="tile tile_customer trs_scale">
@@ -144,16 +140,16 @@
                         <nav role="navigation">
                             <ul class="sf-menu nav">                                
                                 <li class="">
-                                    <a href="/pages/about-us" title="">About Us</a>
+                                    <a href="" title="">About Us</a>
                                     <ul>
                                         <li class=" first">
-                                            <a class="first" href="/collections/accessories">About</a>
+                                            <a class="first" href="">About</a>
                                         </li>
                                         <li class="">
-                                            <a class="" href="/collections/cpus">Why Us</a>
+                                            <a class="" href="">Why Us</a>
                                         </li>
                                         <li class="">
-                                            <a class="" href="/collections/hard-drives">Mission & Vission</a>
+                                            <a class="" href="">Mission & Vission</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -185,6 +181,9 @@
                                 <li class="">
                                     <a href="<?php print_r(base_url().'getpagecontents/solutions');?>" title="">Solution</a>
                                 </li>
+                                <li class="">
+                                    <a href="<?php print_r(base_url().'getpagecontents/contactus');?>" title="">Contact Us</a>
+                                </li>
                             </ul>
                             <script>
                                 jQuery(function($) {
@@ -195,7 +194,8 @@
                     </div>
                 </div>
             </header>
-
+            
+            
             <!-- main content -->
             <div id="main" class="container" role="main">
                 <div class="row"> 
@@ -542,8 +542,8 @@
 
                     <div class="bottom_block_4 col-sm-3">
                         <h3>Contacts</h3>
-                        <p class="adr">Shop # 234, Level # 2,Shuvastu Archade, Elephant Road, Dhaka </p>
-                        <p class="tel"><i class="fa fa-phone-square"></i>Tel: +8804477970416</p>
+                        <p class="adr">Office: 234, Shuvastu Archade IT Park, Level-3, 46-48 New Elephant Road, Dhaka-1205 </p>
+                        <p class="tel"><i class="fa fa-phone-square"></i>Tel: +880-29615217, 04477970416<br>Cell: +880179601061</p>
                     </div>
 
                 </div>
@@ -552,84 +552,84 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
             <![endif]-->
             <div id="push"></div>
-            </div><!-- end of #wrapper -->
-            <!-- footer -->
-            <footer id="footer">
-                <div class="container copyright" role="contentinfo">
-                    &copy; 2014  All Rights Reserved. Design by <a href="//templatemonster.com">computertimesltd.com</a>. <a href="http://www.computertimesltd.com" target="_blank">Computer Times</a>.
-                </div>
-            </footer>
-            <script src="<?php echo base_url('assets/js/currencies.js'); ?>" type="text/javascript"></script>
-            <script src="<?php echo base_url('assets/js/jqueryCurrencies.js'); ?>" type="text/javascript"></script>
-            <script>
+        </div><!-- end of #wrapper -->
+        <!-- footer -->
+        <footer id="footer">
+            <div class="container copyright" role="contentinfo">
+                &copy; 2014  All Rights Reserved. Design by <a href="//templatemonster.com">computertimesltd.com</a>. <a href="http://www.computertimesltd.com" target="_blank">Computer Times</a>.
+            </div>
+        </footer>
+        <script src="<?php echo base_url('assets/js/currencies.js'); ?>" type="text/javascript"></script>
+        <script src="<?php echo base_url('assets/js/jqueryCurrencies.js'); ?>" type="text/javascript"></script>
+        <script>
 
 
-                Currency.format = 'money_format';
+            Currency.format = 'money_format';
 
 
-                var shopCurrency = 'USD';
+            var shopCurrency = 'USD';
 
-                /* Sometimes merchants change their shop currency, let's tell our JavaScript file */
-                Currency.money_with_currency_format[shopCurrency] = "${{amount}} USD";
-                Currency.money_format[shopCurrency] = "${{amount}}";
+            /* Sometimes merchants change their shop currency, let's tell our JavaScript file */
+            Currency.money_with_currency_format[shopCurrency] = "${{amount}} USD";
+            Currency.money_format[shopCurrency] = "${{amount}}";
 
-                /* Default currency */
-                var defaultCurrency = 'USD' || shopCurrency;
+            /* Default currency */
+            var defaultCurrency = 'USD' || shopCurrency;
 
-                /* Cookie currency */
-                var cookieCurrency = Currency.cookie.read();
+            /* Cookie currency */
+            var cookieCurrency = Currency.cookie.read();
 
-                /* Fix for customer account pages */
-                jQuery('span.money span.money').each(function() {
-                    jQuery(this).parents('span.money').removeClass('money');
-                });
+            /* Fix for customer account pages */
+            jQuery('span.money span.money').each(function() {
+                jQuery(this).parents('span.money').removeClass('money');
+            });
 
-                /* Saving the current price */
-                jQuery('span.money').each(function() {
-                    jQuery(this).attr('data-currency-USD', jQuery(this).html());
-                });
+            /* Saving the current price */
+            jQuery('span.money').each(function() {
+                jQuery(this).attr('data-currency-USD', jQuery(this).html());
+            });
 
-                // If there's no cookie.
-                if (cookieCurrency == null) {
-                    if (shopCurrency !== defaultCurrency) {
-                        Currency.convertAll(shopCurrency, defaultCurrency);
-                    }
-                    else {
-                        Currency.currentCurrency = defaultCurrency;
-                    }
-                }
-                // If the cookie value does not correspond to any value in the currency dropdown.
-                else if (jQuery('[name=currencies]').size() && jQuery('[name=currencies] option[value=' + cookieCurrency + ']').size() === 0) {
-                    Currency.currentCurrency = shopCurrency;
-                    Currency.cookie.write(shopCurrency);
-                }
-                else if (cookieCurrency === shopCurrency) {
-                    Currency.currentCurrency = shopCurrency;
+            // If there's no cookie.
+            if (cookieCurrency == null) {
+                if (shopCurrency !== defaultCurrency) {
+                    Currency.convertAll(shopCurrency, defaultCurrency);
                 }
                 else {
-                    Currency.convertAll(shopCurrency, cookieCurrency);
+                    Currency.currentCurrency = defaultCurrency;
                 }
+            }
+            // If the cookie value does not correspond to any value in the currency dropdown.
+            else if (jQuery('[name=currencies]').size() && jQuery('[name=currencies] option[value=' + cookieCurrency + ']').size() === 0) {
+                Currency.currentCurrency = shopCurrency;
+                Currency.cookie.write(shopCurrency);
+            }
+            else if (cookieCurrency === shopCurrency) {
+                Currency.currentCurrency = shopCurrency;
+            }
+            else {
+                Currency.convertAll(shopCurrency, cookieCurrency);
+            }
 
-                jQuery('[name=currencies]').val(Currency.currentCurrency).change(function() {
-                    var newCurrency = jQuery(this).val();
-                    Currency.convertAll(Currency.currentCurrency, newCurrency);
-                    jQuery('.selected-currency').text(Currency.currentCurrency);
-                });
-
-                var original_selectCallback = window.selectCallback;
-                var selectCallback = function(variant, selector) {
-                    original_selectCallback(variant, selector);
-                    Currency.convertAll(shopCurrency, jQuery('[name=currencies]').val());
-                    jQuery('.selected-currency').text(Currency.currentCurrency);
-                };
-
+            jQuery('[name=currencies]').val(Currency.currentCurrency).change(function() {
+                var newCurrency = jQuery(this).val();
+                Currency.convertAll(Currency.currentCurrency, newCurrency);
                 jQuery('.selected-currency').text(Currency.currentCurrency);
+            });
 
-            </script>
-            <script type="text/javascript">
-                $(document).ready(function() {
-                    $('#currencies').customSelect();
-                });
-            </script>
-        </body>
-    </html>
+            var original_selectCallback = window.selectCallback;
+            var selectCallback = function(variant, selector) {
+                original_selectCallback(variant, selector);
+                Currency.convertAll(shopCurrency, jQuery('[name=currencies]').val());
+                jQuery('.selected-currency').text(Currency.currentCurrency);
+            };
+
+            jQuery('.selected-currency').text(Currency.currentCurrency);
+
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#currencies').customSelect();
+            });
+        </script>
+    </body>
+</html>
