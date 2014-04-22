@@ -3,11 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/computertimes/application/views/productmodal.php</file>
-            <file>file:/C:/xampp/htdocs/computertimes/assets/css/style7524.css</file>
+            <file>file:/C:/xampp/htdocs/computertimes/application/controllers/home.php</file>
+            <file>file:/C:/xampp/htdocs/computertimes/assets/css/assets7524.css</file>
+            <file>file:/C:/xampp/htdocs/computertimes/ctlsite.sql</file>
             <file>file:/C:/xampp/htdocs/computertimes/application/views/home.php</file>
-            <file>file:/C:/xampp/htdocs/computertimes/application/controllers/getpagecontents.php</file>
-            <file>file:/C:/xampp/htdocs/computertimes/application/views/result_view.php</file>
+            <file>file:/C:/xampp/htdocs/computertimes/application/views/abc.php</file>
+            <file>file:/C:/xampp/htdocs/computertimes/assets/css/main.css</file>
         </group>
     </open-files>
 </project-private>

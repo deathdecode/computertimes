@@ -35,6 +35,9 @@ class Home extends CI_Controller {
         $this->data['alldata_desktop'] = $this->UploadProductModel->recent_product();
         $this->load->view('home',  $this->data);
     }
+    public function abc() {
+        $this->load->view('abc');
+    }
 }
 
 /* End of file welcome.php */

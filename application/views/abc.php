@@ -3,7 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  
-<link rel="stylesheet" href="menu.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php echo base_url()."assets/css/menu.css";?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php echo base_url()."assets/css/main.css";?>" type="text/css" media="screen" />
  
 <title>Mega Drop Down Menu</title>
 <!--[if IE 6]>

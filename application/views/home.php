@@ -1,5 +1,5 @@
 <!doctype html>
- <html class="no-js"> 
+<html class="no-js"> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,9 +23,11 @@
             })();
 
             //]]>
-            
+
         </script>
         <link href="<?php echo base_url('assets/css/bootstrap7524.css'); ?>" rel="stylesheet" type="text/css"  media="all"  /> 
+        <link href="<?php echo base_url('assets/css/main.css'); ?>" rel="stylesheet" type="text/css"  media="all"  /> 
+        <link href="<?php echo base_url('assets/css/menu.css'); ?>" rel="stylesheet" type="text/css"  media="all"  /> 
         <link href="<?php echo base_url('assets/css/assets7524.css'); ?>" rel="stylesheet" type="text/css"  media="all"  /> 
         <link href="<?php echo base_url('assets/css/style7524.css'); ?>" rel="stylesheet" type="text/css"/>
         <!--<link href="//cdn.shopify.com/s/files/1/0308/1345/t/2/assets/style.css?7524" rel="stylesheet" type="text/css"  media="all"  />-->
@@ -82,7 +84,7 @@
                 <div class="container">
                     <!-- logo -->
                     <h1 id="site-title">
-                        <a class="trs_color" href="<?php echo base_url();?>"> <img src="<?php echo base_url()."images/ctlheader.jpg";?>" /></a>
+                        <a class="trs_color" href="<?php echo base_url(); ?>"> <img src="<?php echo base_url() . "images/ctlheader.jpg"; ?>" /></a>
                     </h1>
                     <!-- tiles -->
                     <div class="header_tiles">
@@ -90,7 +92,7 @@
                         <ul class="header_tiles-1">
                             <!-- home -->
                             <li class="tile tile_home trs_scale">
-                                <a href="<?php echo base_url();?>"><i class="fa fa-home"></i></a>
+                                <a href="<?php echo base_url(); ?>"><i class="fa fa-home"></i></a>
                             </li>
                             <!-- twitter -->
                             <li class="tile tile_twi trs_scale">
@@ -109,9 +111,9 @@
                                 <a href="https://www.pinterest.com/computertimesltd/" target ="_blank"><i class="fa fa-pinterest"></i></a>
                             </li>
                             <!-- customer -->
-<!--                            <li class="tile tile_customer trs_scale">
-                                <a href="/account/login" id="customer_login_link"><i class='fa fa-user'></i></a>
-                            </li>-->
+                            <!--                            <li class="tile tile_customer trs_scale">
+                                                            <a href="/account/login" id="customer_login_link"><i class='fa fa-user'></i></a>
+                                                        </li>-->
                             <!-- currency -->
                         </ul>
                         <!--
@@ -155,40 +157,37 @@
                                 </li>
 
                                 <li class="">
-                                    <a href="<?php print_r(base_url().'getpagecontents/notebook');?>" title="">Notebook</a>
+                                    <a href="<?php print_r(base_url() . 'getpagecontents/notebook'); ?>" title="">Notebook</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php print_r(base_url().'getpagecontents/laptop');?>" title="">Laptop</a>
+                                    <a href="<?php print_r(base_url() . 'getpagecontents/laptop'); ?>" title="">Laptop</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php print_r(base_url().'getpagecontents/desktop');?>" title="">Desktop</a>
+                                    <a href="<?php print_r(base_url() . 'getpagecontents/desktop'); ?>" title="">Desktop</a>
                                 </li>
                                 <li class=" last">
-                                    <a href="<?php print_r(base_url().'getpagecontents/tablet');?>" title="">Tablet</a>
+                                    <a href="<?php print_r(base_url() . 'getpagecontents/tablet'); ?>" title="">Tablet</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php print_r(base_url().'getpagecontents/printer');?>" title="">Printer</a>
+                                    <a href="<?php print_r(base_url() . 'getpagecontents/printer'); ?>" title="">Printer</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php print_r(base_url().'getpagecontents/software');?>" title="">Software</a>
+                                    <a href="<?php print_r(base_url() . 'getpagecontents/software'); ?>" title="">Software</a>
                                 </li>
                                 <li class=" last">
-                                    <a href="<?php print_r(base_url().'getpagecontents/networking');?>" title="">Networking</a>
+                                    <a href="<?php print_r(base_url() . 'getpagecontents/networking'); ?>" title="">Networking</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php print_r(base_url().'getpagecontents/printingaccessories');?>" title="">Printing Accessories</a>
+                                    <a href="<?php print_r(base_url() . 'getpagecontents/printingaccessories'); ?>" title="">Printing Accessories</a>
                                 </li>
                                 <li class="">
-                                    <a href="<?php print_r(base_url().'getpagecontents/solutions');?>" title="">Solution</a>
-                                </li>
-                                <li class="">
-                                    <a href="<?php print_r(base_url().'getpagecontents/contactus');?>" title="">Contact Us</a>
-                                </li>
+                                    <a href="<?php print_r(base_url() . 'getpagecontents/solutions'); ?>" title="">Solution</a>
+                                </li>                                
                             </ul>
                             <script>
-                                jQuery(function($) {
-                                    $('.sf-menu a').addClass('trs_bg');
-                                });
+            jQuery(function($) {
+                $('.sf-menu a').addClass('trs_bg');
+            });
                             </script>
                         </nav>
                     </div>
@@ -253,8 +252,8 @@
                 $(window).load(function() {
                     $('#slider').nivoSlider({
                         effect: 'fade',
-                        animSpeed: 500,
-                        pauseTime: 7000,
+                        animSpeed: 1000,
+                        pauseTime: 5000,
                         startSlide: 0,
                         directionNav: true,
                         directionNavHide: false,
@@ -330,7 +329,7 @@
                                         } else if ($rowNo % 3 == 0) {
                                             echo '</div><div class = "row">';
                                         }
-                                        echo '<div id = "'.$rowNo.'" class="products col-md-4 product product__product-grid-item" data-toggle ="modal" data-target="#showProduct" >
+                                        echo '<div id = "' . $rowNo . '" class="products col-md-4 product product__product-grid-item" data-toggle ="modal" data-target="#showProduct" >
                                         <div class="">  
                                             <a href="/products/product01">
                                                 <img src = "' . base_url() . 'images/' . $row->imagename . '" height="250px" width ="250px"/></a>
@@ -353,7 +352,7 @@
                                     <!--                                    <div class="product product__product-grid-item col-sm-3 item_odd step3-1 step4-1">
                                                                             <div class="product_image-wrap">  
                                                                                 <a href="/products/product01">
-<?php //echo '<img src = "'.base_url().'images/'.$alldata_desktop[0]->imagename.'" height="100px" width ="100px"/>'; ?>
+                                    <?php //echo '<img src = "'.base_url().'images/'.$alldata_desktop[0]->imagename.'" height="100px" width ="100px"/>'; ?>
                                                                                 </a>
                                                                             </div> .prod-image-wrap 
                                                                             <div class="product_title-wrap">
@@ -592,7 +591,7 @@
 
                                 </div>
                             </div>
-                            <?php $this->load->view("productmodal",$alldata_desktop); ?>
+                            <?php $this->load->view("productmodal", $alldata_desktop); ?>
 
                         </div>
 
@@ -673,66 +672,66 @@
         <script>
 
 
-            Currency.format = 'money_format';
+                Currency.format = 'money_format';
 
 
-            var shopCurrency = 'USD';
+                var shopCurrency = 'USD';
 
-            /* Sometimes merchants change their shop currency, let's tell our JavaScript file */
-            Currency.money_with_currency_format[shopCurrency] = "${{amount}} USD";
-            Currency.money_format[shopCurrency] = "${{amount}}";
+                /* Sometimes merchants change their shop currency, let's tell our JavaScript file */
+                Currency.money_with_currency_format[shopCurrency] = "${{amount}} USD";
+                Currency.money_format[shopCurrency] = "${{amount}}";
 
-            /* Default currency */
-            var defaultCurrency = 'USD' || shopCurrency;
+                /* Default currency */
+                var defaultCurrency = 'USD' || shopCurrency;
 
-            /* Cookie currency */
-            var cookieCurrency = Currency.cookie.read();
+                /* Cookie currency */
+                var cookieCurrency = Currency.cookie.read();
 
-            /* Fix for customer account pages */
-            jQuery('span.money span.money').each(function() {
-                jQuery(this).parents('span.money').removeClass('money');
-            });
+                /* Fix for customer account pages */
+                jQuery('span.money span.money').each(function() {
+                    jQuery(this).parents('span.money').removeClass('money');
+                });
 
-            /* Saving the current price */
-            jQuery('span.money').each(function() {
-                jQuery(this).attr('data-currency-USD', jQuery(this).html());
-            });
+                /* Saving the current price */
+                jQuery('span.money').each(function() {
+                    jQuery(this).attr('data-currency-USD', jQuery(this).html());
+                });
 
-            // If there's no cookie.
-            if (cookieCurrency == null) {
-                if (shopCurrency !== defaultCurrency) {
-                    Currency.convertAll(shopCurrency, defaultCurrency);
+                // If there's no cookie.
+                if (cookieCurrency == null) {
+                    if (shopCurrency !== defaultCurrency) {
+                        Currency.convertAll(shopCurrency, defaultCurrency);
+                    }
+                    else {
+                        Currency.currentCurrency = defaultCurrency;
+                    }
+                }
+                // If the cookie value does not correspond to any value in the currency dropdown.
+                else if (jQuery('[name=currencies]').size() && jQuery('[name=currencies] option[value=' + cookieCurrency + ']').size() === 0) {
+                    Currency.currentCurrency = shopCurrency;
+                    Currency.cookie.write(shopCurrency);
+                }
+                else if (cookieCurrency === shopCurrency) {
+                    Currency.currentCurrency = shopCurrency;
                 }
                 else {
-                    Currency.currentCurrency = defaultCurrency;
+                    Currency.convertAll(shopCurrency, cookieCurrency);
                 }
-            }
-            // If the cookie value does not correspond to any value in the currency dropdown.
-            else if (jQuery('[name=currencies]').size() && jQuery('[name=currencies] option[value=' + cookieCurrency + ']').size() === 0) {
-                Currency.currentCurrency = shopCurrency;
-                Currency.cookie.write(shopCurrency);
-            }
-            else if (cookieCurrency === shopCurrency) {
-                Currency.currentCurrency = shopCurrency;
-            }
-            else {
-                Currency.convertAll(shopCurrency, cookieCurrency);
-            }
 
-            jQuery('[name=currencies]').val(Currency.currentCurrency).change(function() {
-                var newCurrency = jQuery(this).val();
-                Currency.convertAll(Currency.currentCurrency, newCurrency);
+                jQuery('[name=currencies]').val(Currency.currentCurrency).change(function() {
+                    var newCurrency = jQuery(this).val();
+                    Currency.convertAll(Currency.currentCurrency, newCurrency);
+                    jQuery('.selected-currency').text(Currency.currentCurrency);
+                });
+
+                var original_selectCallback = window.selectCallback;
+                var selectCallback = function(variant, selector) {
+                    original_selectCallback(variant, selector);
+                    Currency.convertAll(shopCurrency, jQuery('[name=currencies]').val());
+                    jQuery('.selected-currency').text(Currency.currentCurrency);
+                };
+
                 jQuery('.selected-currency').text(Currency.currentCurrency);
-            });
-
-            var original_selectCallback = window.selectCallback;
-            var selectCallback = function(variant, selector) {
-                original_selectCallback(variant, selector);
-                Currency.convertAll(shopCurrency, jQuery('[name=currencies]').val());
-                jQuery('.selected-currency').text(Currency.currentCurrency);
-            };
-
-            jQuery('.selected-currency').text(Currency.currentCurrency);
 
         </script>
         <script type="text/javascript">
