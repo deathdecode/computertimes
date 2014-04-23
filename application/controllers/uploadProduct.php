@@ -152,8 +152,8 @@ class UploadProduct extends CI_Controller {
             );
             $additional_data['imagename'] = $imagename;
 //                $product_name = $this->input->post('name');
-            $this->load->model('UploadProductModel');
-            $this->UploadProductModel->up_product($additional_data);
+            $this->load->model('uploadproductmodel');
+            $this->uploadproductmodel->up_product($additional_data);
 //        /* File failed to upload - continue */
 //        if($upload === FALSE) continue;
 //        /* Get the data about the file */

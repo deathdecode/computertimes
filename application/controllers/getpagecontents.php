@@ -31,57 +31,57 @@ class GetPageContents extends CI_Controller {
     }
     
     public function desktop() {
-        $this->load->model('UploadProductModel');
+        $this->load->model('uploadproductmodel');
         $this->data['category'] = "desktop"; 
-        $this->data['alldata_desktop'] = $this->UploadProductModel->get_product($this->data['category']);
+        $this->data['alldata_desktop'] = $this->uploadproductmodel->get_product($this->data['category']);
         $this->load->view('result_view',  $this->data);
     }
     public function notebook() {
-        $this->load->model('UploadProductModel');
+        $this->load->model('uploadproductmodel');
         $this->data['category'] = "notebook"; 
-        $this->data['alldata_desktop'] = $this->UploadProductModel->get_product($this->data['category']);
+        $this->data['alldata_desktop'] = $this->uploadproductmodel->get_product($this->data['category']);
         $this->load->view('result_view',  $this->data);
     }
     public function laptop() {
-        $this->load->model('UploadProductModel');
+        $this->load->model('uploadproductmodel');
         $this->data['category'] = "laptop"; 
-        $this->data['alldata_desktop'] = $this->UploadProductModel->get_product($this->data['category']);
+        $this->data['alldata_desktop'] = $this->uploadproductmodel->get_product($this->data['category']);
         $this->load->view('result_view',  $this->data);
     }
     public function printer() {
-        $this->load->model('UploadProductModel');
+        $this->load->model('uploadproductmodel');
         $this->data['category'] = "printer"; 
-        $this->data['alldata_desktop'] = $this->UploadProductModel->get_product($this->data['category']);
+        $this->data['alldata_desktop'] = $this->uploadproductmodel->get_product($this->data['category']);
         $this->load->view('result_view',  $this->data);
     }
     public function tablet() {
-        $this->load->model('UploadProductModel');
+        $this->load->model('uploadproductmodel');
         $this->data['category'] = "tablet"; 
-        $this->data['alldata_desktop'] = $this->UploadProductModel->get_product($this->data['category']);
+        $this->data['alldata_desktop'] = $this->uploadproductmodel->get_product($this->data['category']);
         $this->load->view('result_view',  $this->data);
     }
     public function software() {
-        $this->load->model('UploadProductModel');
+        $this->load->model('uploadproductmodel');
         $this->data['category'] = "software"; 
-        $this->data['alldata_desktop'] = $this->UploadProductModel->get_product($this->data['category']);
+        $this->data['alldata_desktop'] = $this->uploadproductmodel->get_product($this->data['category']);
         $this->load->view('result_view',  $this->data);
     }
     public function networking() {
-        $this->load->model('UploadProductModel');
+        $this->load->model('uploadproductmodel');
         $this->data['category'] = "networking"; 
-        $this->data['alldata_desktop'] = $this->UploadProductModel->get_product($this->data['category']);
+        $this->data['alldata_desktop'] = $this->uploadproductmodel->get_product($this->data['category']);
         $this->load->view('result_view',  $this->data);
     }
     public function printingaccessories() {
-        $this->load->model('UploadProductModel');
+        $this->load->model('uploadproductmodel');
         $this->data['category'] = "printeraccessories"; 
-        $this->data['alldata_desktop'] = $this->UploadProductModel->get_product($this->data['category']);
+        $this->data['alldata_desktop'] = $this->uploadproductmodel->get_product($this->data['category']);
         $this->load->view('result_view',  $this->data);
     }
     public function solutions() {
-        $this->load->model('UploadProductModel');
+        $this->load->model('uploadproductmodel');
         $this->data['category'] = "solutions"; 
-        $this->data['alldata_desktop'] = $this->UploadProductModel->get_product($this->data['category']);
+        $this->data['alldata_desktop'] = $this->uploadproductmodel->get_product($this->data['category']);
         $this->load->view('result_view',  $this->data);
     }
 

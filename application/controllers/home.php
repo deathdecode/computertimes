@@ -30,9 +30,9 @@ class Home extends CI_Controller {
         $this->recent_product();
     }
     public function recent_product() {
-        $this->load->model('UploadProductModel');
+        $this->load->model('uploadproductmodel');
         $this->data['category'] = "Recent Products"; 
-        $this->data['alldata_desktop'] = $this->UploadProductModel->recent_product();
+        $this->data['alldata_desktop'] = $this->uploadproductmodel->recent_product();
         $this->load->view('home',  $this->data);
     }
 }
