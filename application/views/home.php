@@ -26,6 +26,8 @@
 
         </script>
         <link href="<?php echo base_url('assets/css/bootstrap7524.css'); ?>" rel="stylesheet" type="text/css"  media="all"  /> 
+        <link href="<?php echo base_url('assets/css/main.css'); ?>" rel="stylesheet" type="text/css"  media="all"  /> 
+        <link href="<?php echo base_url('assets/css/menu.css'); ?>" rel="stylesheet" type="text/css"  media="all"  /> 
         <link href="<?php echo base_url('assets/css/assets7524.css'); ?>" rel="stylesheet" type="text/css"  media="all"  /> 
         <link href="<?php echo base_url('assets/css/style7524.css'); ?>" rel="stylesheet" type="text/css"/>
         <!--<link href="//cdn.shopify.com/s/files/1/0308/1345/t/2/assets/style.css?7524" rel="stylesheet" type="text/css"  media="all"  />-->
@@ -82,7 +84,11 @@
                 <div class="container">
                     <!-- logo -->
                     <h1 id="site-title">
+<<<<<<< HEAD
                         <a class="trs_color" href="<?php echo base_url(); ?>"> <img class="img-responsive" src="<?php echo base_url() . "images/ctlheader.jpg"; ?>" /></a>
+=======
+                        <a class="trs_color" href="<?php echo base_url(); ?>"> <img src="<?php echo base_url() . "images/ctlheader.jpg"; ?>" /></a>
+>>>>>>> 9369898f7f8bd32e7d24ba4dce45825c384a5252
                     </h1>
                     <!-- tiles -->
                     <div class="header_tiles">
@@ -156,6 +162,7 @@
 
                                 <li class="">
                                     <a href="<?php print_r(base_url() . 'getpagecontents/notebook'); ?>" title="">Notebook</a>
+<<<<<<< HEAD
                                     <ul>
                                         <li>
                                             <a href="<?php print_r(base_url() . 'getpagecontents/notebook'); ?>" title="">HP</a>
@@ -167,6 +174,11 @@
                                             <a href="<?php print_r(base_url() . 'getpagecontents/notebook'); ?>" title="">Fujitsu</a>
                                         </li>
                                     </ul>
+=======
+                                </li>
+                                <li class="">
+                                    <a href="<?php print_r(base_url() . 'getpagecontents/laptop'); ?>" title="">Laptop</a>
+>>>>>>> 9369898f7f8bd32e7d24ba4dce45825c384a5252
                                 </li>
                                 <li class="">
                                     <a href="<?php print_r(base_url() . 'getpagecontents/desktop'); ?>" title="">Desktop</a>
@@ -182,6 +194,7 @@
                                 </li>
                                 <li class=" last">
                                     <a href="<?php print_r(base_url() . 'getpagecontents/networking'); ?>" title="">Networking</a>
+<<<<<<< HEAD
                                 </li>
                                 <li class="">
                                     <a href="<?php print_r(base_url() . 'getpagecontents/printingaccessories'); ?>" title="">Printing Accessories</a>
@@ -192,6 +205,15 @@
                                 <li class="">
                                     <a href="<?php print_r(base_url() . 'getpagecontents/contactus'); ?>" title="">Contact Us</a>
                                 </li>
+=======
+                                </li>
+                                <li class="">
+                                    <a href="<?php print_r(base_url() . 'getpagecontents/printingaccessories'); ?>" title="">Printing Accessories</a>
+                                </li>
+                                <li class="">
+                                    <a href="<?php print_r(base_url() . 'getpagecontents/solutions'); ?>" title="">Solution</a>
+                                </li>                                
+>>>>>>> 9369898f7f8bd32e7d24ba4dce45825c384a5252
                             </ul>
                             <script>
             jQuery(function($) {
@@ -261,8 +283,8 @@
                 $(window).load(function() {
                     $('#slider').nivoSlider({
                         effect: 'fade',
-                        animSpeed: 500,
-                        pauseTime: 7000,
+                        animSpeed: 1000,
+                        pauseTime: 5000,
                         startSlide: 0,
                         directionNav: true,
                         directionNavHide: false,
