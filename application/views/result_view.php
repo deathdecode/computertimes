@@ -82,7 +82,7 @@
                 <div class="container">
                     <!-- logo -->
                     <h1 id="site-title">
-                        <a class="trs_color" href="<?php echo base_url();?>"> <img src="<?php echo base_url()."images/ctlheader.jpg";?>" /></a>
+                        <a class="trs_color" href="<?php echo base_url();?>"> <img class="img-responsive" src="<?php echo base_url()."images/ctlheader.jpg";?>" /></a>
                     </h1>
                     <!-- tiles -->
                     <div class="header_tiles">
